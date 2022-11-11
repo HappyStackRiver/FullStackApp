@@ -1,6 +1,6 @@
 export default class APIService {
     static UpdateArticle(id, body) {
-        return fetch(`http://192.168.0.240:8333/update/${id}/`, {
+        return fetch(`http://localhost:10666/update/${id}/`, {
             'method':'PUT',
             headers: {
               'Content-Type':'application/json'
