@@ -12,7 +12,7 @@ export default class APIService {
     }
 
     static InsertArticle(body) {
-        return fetch(`http://192.168.0.240:8333/add`, {
+        return fetch(`http://localhost:10666/add`, {
             'method':'POST',
             headers: {
               'Content-Type':'application/json'
@@ -25,7 +25,7 @@ export default class APIService {
 
 
     static DeleteArticle(id) {
-        return fetch(`http://192.168.0.240:8333/delete/${id}/`, {
+        return fetch(`http://localhost:10666/delete/${id}/`, {
             'method':'Delete',
             headers: {
               'Content-Type':'application/json'
